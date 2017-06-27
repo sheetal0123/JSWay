@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loops</title>
+</head>
+<body>
+<script type="text/javascript">
+
+    //push - add new element at the end of array
+    var myArray = [];
+    alert(myArray.length);   // 0
+
+    for (var i = 0; i <= 5; i++) {
+        myArray.push(i * 2);
+    }
+    alert(myArray.length);  //6
+
+
+    //pop - removed and return element from end
+    for (var i = 0; i <= 5; i++) {
+        document.write(myArray.pop() + "<br/>");
+    }
+    alert(myArray.length);
+
+
+</script>
+</body>
+</html>

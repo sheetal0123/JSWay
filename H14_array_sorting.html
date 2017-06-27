@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loops</title>
+</head>
+<body>
+<script type="text/javascript">
+
+    //Strings
+    var arr1 = ["Ball", "Apple", "Cat"]
+    document.write(arr1.sort() + "<br>")  // Apple,Ball,Cat
+
+    var arr1rev = ["Ball", "Apple", "Cat"]
+    document.write(arr1rev.sort().reverse() + "<br>")  // Cat,Ball,Apple
+
+    var arr2 = ["Ball", "apple", "Cat"]
+    document.write(arr2.sort() + "<br>")  // Ball,Cat,apple
+
+
+
+
+    //Numbers
+    var arr3 = [10, 1, 20, 2]
+    document.write(arr3.sort() + "<br>")  // 1,10,2,20 | numbers converted into string and then sorted
+
+    var arr4 = [10, 1, 20, 2]             // 1,2,10,20
+    document.write(arr4.sort(function (a, b) {
+        return a - b;
+    }))
+    document.write("<br>")
+    //  +ve : a > b
+    //  -ve : a< b
+    //  0   : same
+
+
+    var arr4rev1 = [10, 1, 20, 2]             // 20,10,2,1
+    document.write(arr4rev1.sort(function (a, b) {
+        return b - a;
+    }))
+    document.write("<br>")
+
+
+
+    var arr4rev2 = [10, 1, 20, 2]             // 20,10,2,1
+    document.write(arr4rev2.sort(function (a, b) {
+        return a - b;
+    }).reverse())
+
+</script>
+</body>
+</html>

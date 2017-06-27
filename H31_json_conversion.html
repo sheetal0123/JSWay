@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loops</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+    //JSON to String
+    var empData = {
+        "name": "John",
+        "address": "Delhi",
+        "id": "001",
+        "gender": "male"
+    };
+
+    var string = JSON.stringify(empData);
+    document.write(string);
+    document.write("<br>");
+    document.write("<br>");
+
+    //String to JSON
+    var json = JSON.parse(string);
+    document.write(json.id+"<br>");
+    document.write(json.name);
+
+
+
+
+</script>
+
+</body>
+</html>

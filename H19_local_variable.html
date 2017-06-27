@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loops</title>
+</head>
+<body>
+<script type="text/javascript">
+
+    function localVariable() {
+        var greeting = "Hello";  // local variable
+        greeting = greeting + " JS";
+        alert(greeting);
+    }
+    localVariable();
+    alert(greeting);  // Error: Uncaught ReferenceError: greeting is not defined
+
+
+</script>
+</body>
+</html>

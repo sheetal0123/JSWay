@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loops</title>
+</head>
+<body>
+
+<div id="timeDiv"></div>
+
+<script type="text/javascript">
+    //setInterval call a func on delay of specified time
+    setInterval(getCurrentDateTime, 1000);
+
+    function getCurrentDateTime() {
+        document.getElementById("timeDiv").innerHTML = new Date();
+    }
+
+    getCurrentDateTime();
+</script>
+
+</body>
+</html>

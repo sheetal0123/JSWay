@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loops</title>
+</head>
+<body>
+<script type="text/javascript">
+
+    //type 1
+    var greeting = "Hello";  // global variable
+    function globalVariable1() {
+        greeting = greeting + " Sky";
+    }
+    globalVariable1();
+    //alert(greeting);
+
+
+    //type 2 : if var is not mentioned then it become global var
+    function globalVariable2() {
+        skyglobal = "Sky Me";
+    }
+    globalVariable2();
+    //alert(skyglobal);
+
+
+
+    //type 3: variable inside {} are global var rather local var as in case with functions
+
+    if(100 > 50){
+        var str = "inside if loop"
+    }
+    document.write("global var: "+str)
+
+
+</script>
+</body>
+</html>

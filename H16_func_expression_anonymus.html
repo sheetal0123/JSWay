@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loops</title>
+</head>
+<body>
+<script type="text/javascript">
+    /*
+     Anonymous function expression
+     No function name required
+     var will be used to call function
+     function hoisting is not aplicable in this case i.e.
+     function need to be declared before it is called
+     */
+
+    //following code will not run in this case
+    //var sum = add(10, 20); // browser console o/p : Uncaught TypeError: add is not a function
+
+    var add = function (a, b) {
+        alert("initialized");
+        var result = a + b;
+        return result;
+    }
+
+    var sum = add(100, 200);
+    alert(sum);  // 300
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loops</title>
+</head>
+<body>
+
+<input type="text" value="100" id="textBox"/>
+<br/><br/><br/>
+<input type="button" value="Start Timer" onclick="startTimer('textBox')"/>
+<input type="button" value="Stop Timer" onclick="stopTimer()"/>
+
+
+//count down will start from 100 and at the end Finish will get populated in text box
+<script type="text/javascript">
+    var intervalId;
+
+
+    function startTimer(controlId) {
+        var control = document.getElementById(controlId);
+        var seconds = control.value;
+        seconds = seconds - 1;
+        if (seconds == 0) {
+            control.value = "Finish";
+            return;
+        }
+        else {
+            control.value = seconds;
+        }
+        intervalId = setTimeout(function () {
+            startTimer('textBox');
+        }, 1000);
+    }
+
+
+    function stopTimer() {
+        clearTimeout(intervalId);
+    }
+</script>
+
+</body>
+</html>

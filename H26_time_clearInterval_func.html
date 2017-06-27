@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loops</title>
+</head>
+<body>
+
+<div id="timeDiv"></div>
+<br>
+<input type="button" value="Start Clock" onclick="startClock()"/>
+<input type="button" value="Stop Clock" onclick="stopClock()"/>
+
+<script type="text/javascript">
+    var intervalId;
+    function startClock() {
+        intervalId = setInterval(getCurrentDateTime, 1000);  //setInterval always return an id i.e. intervalId
+    }
+    function stopClock() {
+        clearInterval(intervalId);  // setInterval() can be stopped using clearInterval(intervalId) function
+    }
+    function getCurrentDateTime() {
+        document.getElementById("timeDiv").innerHTML = new Date();
+    }
+    getCurrentDateTime();
+</script>
+
+</body>
+</html>

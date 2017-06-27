@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loops</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    var empData = [
+        {
+            "name": "John",
+            "address": "Delhi",
+            "id": "001",
+            "gender": "male"
+        },
+        {
+            "name": "Ram",
+            "address": "Bombay",
+            "id": "002",
+            "gender": "male"
+        },
+        {
+            "name": "Sham",
+            "address": {
+                "HNO":"50",
+                "Street":"10 Down"
+            },
+            "id": "003",
+            "gender": "male"
+        }
+    ];
+
+    document.write("ID:" + empData[0].id + ", Name: " + empData[0].name);
+    document.write("<br>");
+    document.write("ID:" + empData[1].id + ", Name: " + empData[1].name);
+    document.write("<br>");
+    document.write("ID:" + empData[2].id + ", Name: " + empData[2].name+ " , Street:" + empData[2].address.Street);
+
+</script>
+
+</body>
+</html>

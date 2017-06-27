@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loops</title>
+</head>
+<body>
+<script type="text/javascript">
+    /*
+     Self Func expression known by following names:
+     Immediately-Invoked Function Expression (IIFE)
+     Self-executing anonymous functions
+     Self-invoked anonymous functions
+
+     1. function name required
+     2. var will be used to call function just like anonymous func expression
+     3. function hoisting is not aplicable in this case too i.e. function need to be declared before it can be called
+     4. named func i.e. fact() can only be used inside method body. Generally used for recursion.
+     */
+
+    //type 1
+    var result = (function fact(n) {
+        if (n <= 1) {
+            return 1;
+        }
+        return n * fact(n - 1);
+    })(5);
+
+    document.write(result);
+    document.write("<br>")
+
+
+
+    //type 2
+    var str = function (value) {
+        return "Hello " + value;
+    }("World")
+
+    document.write(str);
+    console.log(obj)
+
+
+</script>
+</body>
+</html>
